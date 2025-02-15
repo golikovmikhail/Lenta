@@ -55,4 +55,5 @@ class Favorite(Base):
         self.click_favorite_button()
         self.click_filter_button()
         self.click_most_expensive_filter()
+        time.sleep(3)
         self.click_add_first_item()

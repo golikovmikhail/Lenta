@@ -52,9 +52,18 @@ class Checkout(Base):
         print("Заказ оформлен")
 
     def get_text_order_number(self):
-        order_number_text = self.get_order_number().text
-        print(f"Номер заказа: {order_number_text}")
-        return order_number_text
+        """Получает и проверяет номер заказа без символа '№'"""
+        order_number_text = self.get_order_number().text.strip()
+
+        assert order_number_text, "Ошибка: номер заказа не получен!"  # Проверяем, что номер заказа не пустой
+
+        # Удаляем все нецифровые символы, оставляя только цифры
+        order_number_clean = "".join(filter(str.isdigit, order_number_text))
+
+        assert order_number_clean, "Ошибка: после обработки номер заказа отсутствует!"  # Проверяем, что остались цифры
+
+        print(f"Номер заказа: {order_number_clean}")
+        return order_number_clean
 
     # Methods
     def complete_order(self):
