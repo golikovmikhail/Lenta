@@ -26,7 +26,7 @@ class Checkout(Base):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.to_checkout_button)))
 
     def get_checkout_make_order(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.checkout_make_order)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.checkout_make_order)))
 
     def get_order_created_button(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.order_created_button)))
@@ -68,6 +68,7 @@ class Checkout(Base):
     # Methods
     def complete_order(self):
         """Проходит весь процесс оформления заказа"""
+        time.sleep(3)
         self.click_go_to_cart()
         self.click_to_checkout()
         self.click_checkout_make_order()

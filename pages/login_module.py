@@ -18,6 +18,7 @@ class LoginPage(Base):
     phone_input = "//input[contains(@class, 'float-label-input')]"
     take_code_button = "//input[@value='Получить код']"
     otp_input = "(//input[@type='text'])[2]"
+    choose_delivery_button = "//lu-delivery-switch-button-b2c[@textmain='Доставка']"
 
     # Getters
     def get_enter_button(self):
@@ -31,6 +32,10 @@ class LoginPage(Base):
 
     def get_otp_input(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.otp_input)))
+
+    def get_choose_delivery(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.choose_delivery_button)))
+
 
     # Actions
     def click_enter_button(self):
@@ -48,6 +53,10 @@ class LoginPage(Base):
     def input_otp(self, otp):
         self.get_otp_input().send_keys(otp)
         print(f"Введен OTP-код: {otp}")
+
+    def choose_delivery(self):
+        self.get_choose_delivery().click()
+        print("Выбрана доставка'")
 
     # Methods
     # @pytest.fixture

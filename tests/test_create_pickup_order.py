@@ -12,6 +12,7 @@ def test_full_order(set_up):
 
     login = LoginPage(driver)
     login.auth()
+    login.choose_delivery()
 
     fav = Favorite(driver)
     fav.add_to_cart_favorite()
