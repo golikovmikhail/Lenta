@@ -1,0 +1,77 @@
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-24 23:08:32.946914
+Start name method: auth
+
+End time: 2025-02-24 23:08:50.630775
+End name method: auth
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-24 23:08:50.632778
+Start name method: choose_delivery
+
+End time: 2025-02-24 23:08:50.882477
+End name method: choose_delivery
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-24 23:08:50.883483
+Start name method: add_to_cart_search
+
+End time: 2025-02-24 23:08:57.272350
+End name method: add_to_cart_search
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-24 23:08:57.272350
+Start name method: complete_order
+
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-24 23:10:04.192528
+Start name method: auth
+
+End time: 2025-02-24 23:10:20.771816
+End name method: auth
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-24 23:10:20.772819
+Start name method: add_to_cart_search
+
+End time: 2025-02-24 23:10:27.096231
+End name method: add_to_cart_search
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-24 23:10:27.096231
+Start name method: complete_order
+
+End time: 2025-02-24 23:11:10.468564
+End name method: complete_order
+URL: https://lenta-angular-test13.dev.lenta.tech/ordering/thanks/success/?index=0&order=4621051254&isRecurrent=true
+
+-----
+End time: 2025-02-24 23:11:10.600316
+End name method: auth_dash
+URL: https://lenta-angular-test13.dev.lenta.tech/ordering/thanks/success/?index=0&order=4621051254&isRecurrent=true
+
+-----

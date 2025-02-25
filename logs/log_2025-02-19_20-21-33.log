@@ -1,0 +1,39 @@
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-19 20:21:35.132681
+Start name method: auth
+
+End time: 2025-02-19 20:21:51.064861
+End name method: auth
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-19 20:21:51.065859
+Start name method: choose_delivery
+
+End time: 2025-02-19 20:21:51.226579
+End name method: choose_delivery
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-19 20:21:51.227637
+Start name method: add_to_cart_favorite
+
+End time: 2025-02-19 20:21:58.621051
+End name method: add_to_cart_favorite
+URL: https://lenta-angular-test13.dev.lenta.tech/my-account/favorites/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-19 20:21:58.622073
+Start name method: complete_order
+

@@ -1,0 +1,38 @@
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-24 23:01:29.613886
+Start name method: auth
+
+End time: 2025-02-24 23:01:46.368797
+End name method: auth
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-24 23:01:46.369789
+Start name method: add_to_cart_search
+
+End time: 2025-02-24 23:01:52.694223
+End name method: add_to_cart_search
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-24 23:01:52.695796
+Start name method: complete_order
+
+End time: 2025-02-24 23:02:32.167515
+End name method: complete_order
+URL: https://lenta-angular-test13.dev.lenta.tech/ordering/thanks/success/?index=0&order=4621051252&isRecurrent=true
+
+-----
+End time: 2025-02-24 23:02:32.238052
+End name method: auth_dash
+URL: https://lenta-angular-test13.dev.lenta.tech/ordering/thanks/success/?index=0&order=4621051252&isRecurrent=true
+
+-----

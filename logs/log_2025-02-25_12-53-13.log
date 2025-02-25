@@ -1,0 +1,92 @@
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-25 12:53:15.795290
+Start name method: auth
+
+End time: 2025-02-25 12:53:43.604161
+End name method: auth
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-25 12:53:43.605692
+Start name method: choose_delivery
+
+End time: 2025-02-25 12:53:44.166228
+End name method: choose_delivery
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-25 12:53:44.168220
+Start name method: add_to_cart_search
+
+End time: 2025-02-25 12:53:51.695098
+End name method: add_to_cart_search
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_delivery_order.py::test_full_order (call)
+Start time: 2025-02-25 12:53:51.695098
+Start name method: complete_order
+
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-25 12:55:02.021048
+Start name method: auth
+
+End time: 2025-02-25 12:55:19.823641
+End name method: auth
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-25 12:55:19.824787
+Start name method: add_to_cart_search
+
+End time: 2025-02-25 12:55:26.268601
+End name method: add_to_cart_search
+URL: https://lenta-angular-test13.dev.lenta.tech/
+
+-----
+
+-----
+Test: tests/test_create_pickup_order.py::test_full_order (call)
+Start time: 2025-02-25 12:55:26.269874
+Start name method: complete_order
+
+End time: 2025-02-25 12:56:11.656424
+End name method: complete_order
+URL: https://lenta-angular-test13.dev.lenta.tech/ordering/thanks/success/?index=0&order=4621051255&isRecurrent=true
+
+-----
+End time: 2025-02-25 12:56:11.808047
+End name method: auth_dash
+URL: https://lenta-angular-test13.dev.lenta.tech/ordering/thanks/success/?index=0&order=4621051255&isRecurrent=true
+
+-----
+End time: 2025-02-25 12:56:42.826825
+End name method: finish_order
+URL: https://lenta-site-test13.dev.lenta.tech/call/center
+
+-----
+End time: 2025-02-25 12:57:42.516623
+End name method: auth_dash
+URL: data:,
+
+-----
+End time: 2025-02-25 12:58:13.861782
+End name method: finish_order
+URL: https://lenta-site-test13.dev.lenta.tech/call/center
+
+-----
