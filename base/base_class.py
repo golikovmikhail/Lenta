@@ -20,7 +20,7 @@ class Base:
     """Метод создания скриншота"""
     def get_screenshot(self):
         now_date = datetime.utcnow().strftime("%Y-%m-%d_%H-%M-%S")
-        screenshot_path = f"C:\\Users\\golik\\PycharmProjects\\main_Project\\screen\\screenshot_{now_date}.png"
+        screenshot_path = f"C:\\Users\\golik\\PycharmProjects\\lentaProject\\screen\\screenshot_{now_date}.png"
         self.driver.save_screenshot(screenshot_path)
         print(f"📸 Screenshot saved: {screenshot_path}")
 

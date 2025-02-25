@@ -1,9 +1,10 @@
 import time
-
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class LoginPage(Base):
@@ -36,7 +37,6 @@ class LoginPage(Base):
     def get_choose_delivery(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.choose_delivery_button)))
 
-
     # Actions
     def click_enter_button(self):
         self.get_enter_button().click()
@@ -54,20 +54,25 @@ class LoginPage(Base):
         self.get_otp_input().send_keys(otp)
         print(f"Введен OTP-код: {otp}")
 
-    def choose_delivery(self):
-        self.get_choose_delivery().click()
-        print("Выбрана доставка'")
-
     # Methods
     # @pytest.fixture
-    def auth(self, phone_number="9439400012", otp="1234"):
-        """Авторизация пользователя"""
-        self.driver.get(self.url)
-        self.driver.maximize_window()
-        print(f"Открыта страница: {self.driver.current_url}")
-        time.sleep(5)
-        self.click_enter_button()
-        self.input_phone(phone_number)
-        self.click_take_code_button()
-        self.input_otp(otp)
-        time.sleep(3)  # Ждем завершения авторизации
+    def auth(self, phone_number="9439400011", otp="1234"):
+        with allure.step("Авторизация пользователя"):
+            Logger.add_start_step(method="auth")
+            self.driver.get(self.url)
+            self.driver.maximize_window()
+            print(f"Открыта страница: {self.driver.current_url}")
+            time.sleep(10)
+            self.click_enter_button()
+            self.input_phone(phone_number)
+            self.click_take_code_button()
+            self.input_otp(otp)
+            time.sleep(3)
+            Logger.add_end_step(url=self.driver.current_url, method="auth")
+
+    def choose_delivery(self):
+        with allure.step("Выбор доставки"):
+            Logger.add_start_step(method="choose_delivery")
+            self.get_choose_delivery().click()
+            print("Выбрана доставка'")
+            Logger.add_end_step(url=self.driver.current_url, method="choose_delivery")

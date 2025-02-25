@@ -1,9 +1,10 @@
 import time
-
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Favorite(Base):
@@ -49,11 +50,13 @@ class Favorite(Base):
 
     # Methods
     def add_to_cart_favorite(self):
-        """Добавляет товар из избранного в корзину"""
-        print(f"Текущий URL: {self.driver.current_url}")
-
-        self.click_favorite_button()
-        self.click_filter_button()
-        self.click_most_expensive_filter()
-        time.sleep(3)
-        self.click_add_first_item()
+        with allure.step("Добавляет товар из избранного в корзину"):
+            Logger.add_start_step(method="add_to_cart_favorite")
+            print(f"Текущий URL: {self.driver.current_url}")
+            time.sleep(3)
+            self.click_favorite_button()
+            self.click_filter_button()
+            self.click_most_expensive_filter()
+            time.sleep(3)
+            self.click_add_first_item()
+            Logger.add_end_step(url=self.driver.current_url, method="add_to_cart_favorite")
